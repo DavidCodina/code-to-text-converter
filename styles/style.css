@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+}
+
+header h1 span {
+  position: relative;
+  top: 30px;
+  font-size: 200%;
+  line-height: 0;"
+}
+
+main {
+  min-height: 100vh;
+  padding: 0 50px 50px 50px;
+}
+
+.fancy-h1 {
+  margin: 0;
+  padding: 50px 0;
+  color: snow;
+  text-align: center;
+  font-size: 64px;
+  font-family: Montserrat;
+  letter-spacing: 3px;
+  line-height: 1.25;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: violet;
+  text-shadow: -3px 3px 6px rgba(0,0,0,0.5);
+}
+
+.fancy-h2 {
+  padding: 0px 25px;
+  color: snow;
+  font-size: 40px;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #61DAFB;
+  text-shadow: -2px 2px 4px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 2;
+}
+
+.article {
+  position: relative;
+  width: 95%;
+  margin: 0px auto 50px auto;
+  padding: 50px 25px;
+  color: #333;
+  background-color: snow;
+  background-color: rgba(240,240,240,0.9);
+  border: 2px solid violet;
+  border-radius: 25px !important;
+}
+
+.custom-inset {
+  border: 1px solid rgb(200,200,200);
+  border-color: rgb(230,230,230) rgb(230,230,230) rgb(200,200,200) rgb(230,230,230);
+  border-radius: 5px;
+  box-shadow: inset  1px  1px 2px rgba(0,0,0,0.5), /* this is the shadowing. */
+              inset -1px  0px 2px rgba(0,0,0,0.5),
+                     0px -1px 1px rgb(170,170,170),
+                     0px  1px 0px rgb(245,245,245);
+}
+
+#function-machine-img {
+  display: block;
+  position: absolute;
+  top: -70px;
+  left: -50px;
+  transform: rotate(-20deg);
+  width:150px;
+  cursor: pointer;
+  filter: drop-shadow(-2px 2px 4px rgba(0,0,0,0.5));
+}
+
+#pow-img {
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: 100px;
+  transform: scale(0);
+  width:150px;
+  filter: drop-shadow(-2px 2px 4px rgba(0,0,0,0.5));
+  /* A transition is added when window.onload:
+  pow_img.style.transition = "transform 0.15s linear";
+  If you add it here, it will occur when the page loads.*/
+}
+
+#pow-img.zoom-in {
+  transform: scale(1);
+}
+
+
+/* =============================================================================
+                       #code-conversion-form
+============================================================================= */
+
+
+#code-conversion-form {
+  width: 85%;
+  margin: 0 auto 50px auto;
+}
+
+#code-conversion-form label {
+  font-weight: bold;
+}
+
+#code-conversion-form textarea {
+  line-height: 1.3;
+  font-family: courier;
+}
+
+#code-conversion-form > span {
+  font-weight: bold;
+}
+
+#code-conversion-form textarea {
+  min-height: 100px;
+  width: 100% ;
+  padding: 10px;
+}
+
+
+/* ==============================
+        Submit input
+============================== */
+
+
+#code-conversion-form label code {
+  background-color: white;
+}
+
+#code-conversion-form input[type=submit] {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 120px;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  background-color:#61DAFB;
+  border: 0.5px solid rgba(0,0,0,0.25);
+  border-radius: 0px;
+  box-shadow: -3px 3px 6px rgba(0,0,0,0.15);
+  /* transition: all 0.15s linear; */
+  /* A transition is added when window.onload:
+  submit_button.style.transition = "all 0.15s linear";
+  If you add it here, it will occur when the page loads.*/
+}
+
+#code-conversion-form input[type=submit]:hover{
+  border-radius: 25px;
+  box-shadow: none;
+}
+
+#code-conversion-form input[type=submit]:active {
+  box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+
+/* =============================================================================
+                              .result-div
+============================================================================= */
+
+.result-container {
+  width: 85%;
+  margin: 0 auto 50px auto;
+}
+
+.result-container h6 {
+  font-weight: bold;
+}
+
+#result-pre {
+  min-height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  color: white !important;
+  background-color: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* ==============================
+      #clear-button
+============================== */
+
+
+#clear-button {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 120px;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  background-color:#61DAFB;
+  border: 0.5px solid rgba(0,0,0,0.25);
+  border-radius: 0px;
+  box-shadow: -3px 3px 6px rgba(0,0,0,0.15);
+  /* transition: all 0.15s linear; */
+  /* A transition is added when window.onload:
+  submit_button.style.transition = "all 0.15s linear";
+  If you add it here, it will occur when the page loads.*/
+}
+
+#clear-button:hover{
+  border-radius: 25px;
+  box-shadow: none;
+}
+
+#clear-button:active {
+  box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+
+/* =============================================================================
+                              Toast Notification Styles
+============================================================================= */
+
+
+.success-toast {
+  margin-top: 25px;
+  color: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.warning-toast {
+  margin-top: 25px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}

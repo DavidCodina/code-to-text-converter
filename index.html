@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Text / Binary Converter</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="styles/custom-reset-2019.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+
+<body>
+	<!-- =========================================================================
+                                  <header>
+	========================================================================== -->
+
+
+  <header>
+		<h1 class="fancy-h1">Code to Text</h1>
+  </header>
+
+
+	<!-- =========================================================================
+                                   <main>
+	========================================================================== -->
+
+
+  <main>
+		<article class="article">
+			<img id="function-machine-img" src="assets/images/function-machine.png" alt="A function machine"/>
+			<img id="pow-img" src="assets/images/pow.png" alt="Pow! exclamation"/>
+
+			<h2 class="fancy-h2">Code Conversion Form</h2>
+
+			<form id="code-conversion-form">
+				<label>Enter code to be converted ( <code><</code>, <code>></code>, <code>{</code>, <code>}</code> ):</label>
+
+				<br/>
+				<br/>
+
+				<textarea
+				  class="custom-inset"
+					name="string"
+					placeholder="The code will be converted such that it can be used within HTML &#60;code&#62; tags."
+				></textarea>
+
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+
+				<input type="submit" value="SUBMIT"/>
+			</form>
+
+
+			<div class="result-container">
+				<h6>Result:</h6>
+				<pre id="result-pre">The result will be output here...</pre>
+			</div>
+
+
+			<button id="clear-button">CLEAR</button>
+		</article>
+  </main>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
